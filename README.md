@@ -18,7 +18,8 @@ Place plain API key in ~/.config/nzbfinder_api.key:
 
 ## Example
 
-```./nzbfinder.ws-get.py westworld s02e07
+```
+./nzbfinder.ws-get.py westworld s02e07
 Hits: 40
 1	Westworld.S02E07.720p.WEB.H264-DEFLATE	2.0GiB	Mon, 11 Jun 2018 20:26:37 +0200
 
