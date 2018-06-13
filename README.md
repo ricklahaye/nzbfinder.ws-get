@@ -12,7 +12,10 @@ Place plain API key in ~/.config/nzbfinder_api.key:
 
 ## Usage
 
+Show 10 hits, or press enter to show next 10 hits:
+
 ```python3 ./nzbfinder.ws-get.py search```
+
 
 
 
