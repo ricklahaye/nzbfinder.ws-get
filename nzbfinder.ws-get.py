@@ -2,8 +2,8 @@
 import os
 import sys
 import urllib.request
-import certifi
 import json
+import psutil
 import webbrowser
 
 
@@ -102,8 +102,11 @@ def show_data(total_hits, data):
     return data, download_num
 
 def download_nzb(data, download_num):
+    start_nzbget = True
     url = data['item'][int(download_num) - 1]['link']
-    webbrowser.open(url, new=0, autoraise=True)
+
+    os.system("nzbget -A \'{}\'".format(url))
+    exit()
 
 def main():
     api = get_api()                                     # get api key stored
